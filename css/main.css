@@ -10,8 +10,8 @@ canvas[resize] {
 }
 
 .container {
-  width: 580px;
-  height: 580px;
+  max-width: 580px;
+  max-height: 580px;
   margin: auto;
   overflow: hidden;
   box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.08);
@@ -21,7 +21,7 @@ canvas[resize] {
 
 .controls {
   margin: 20px auto;
-  width: 600px;
+  max-width: 600px;
 }
 
 .controls ul {
