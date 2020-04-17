@@ -35,7 +35,8 @@ function makeSemiCircle(firstPoint) {
   myPath.fillColor = getColor();
   myPath.opacity = getOpacity();
 
-  size = getSize(100,400);
+  sizeWidth = window.innerWidth/2;  
+  size = getSize(100,sizeWidth);
 
   secondPoint = new Point(firstPoint.x+size, firstPoint.y);
 
@@ -67,7 +68,10 @@ function makeSemiCircle(firstPoint) {
 function makeCircleScribble(firstPoint) {
   var center = firstPoint;
   var sides = 4;
-  var radius = getSize(100, 200);
+
+  sizeWidth = window.innerWidth/2;  
+  var radius = getSize(100,sizeWidth);
+
   var polygon = new Path.RegularPolygon(center, sides, radius);
   polygon.strokeColor = getColor();
   polygon.strokeWidth = 2;
@@ -99,7 +103,10 @@ function makeCircleScribble(firstPoint) {
 function makeCircle(firstPoint) {
   var center = firstPoint;
   var sides = 4;
-  var radius = getSize(100, 200);
+
+  sizeWidth = window.innerWidth/2;  
+  var radius = getSize(100,sizeWidth);
+
   var polygon = new Path.RegularPolygon(center, sides, radius);
   polygon.fillColor = getColor();
   polygon.opacity = getOpacity();
@@ -130,8 +137,8 @@ function makeCircle(firstPoint) {
 function makeLinesPattern(firstPoint) {
 
   var myPath = [];
-
-  size = getSize(100, 200);
+  sizeWidth = window.innerWidth/2;
+  var size = getSize(100,sizeWidth);
 
   noOfLines = (Math.random()*10)+1;
 
@@ -166,9 +173,9 @@ function generateArt() {
 
   var canvas = document.getElementById("myCanvas");
 
-  var xBound = canvas.width;
-  var yBound = canvas.height;
- 
+  var xBound = window.innerWidth;
+  var yBound = window.innerHeight;
+
   fillBackground('#F2EEE9', canvas);
 
   points = [];

@@ -4,10 +4,11 @@ window.onload = function() {
   paper.setup('myCanvas');
 
   var canvas = document.getElementById("myCanvas");
-  var parent = document.getElementById("container");
-  
-  canvas.width = parent.offsetWidth;
-  canvas.height = parent.offsetHeight;
+  // var parent = document.getElementById("container");
+  // 
+  // canvas.width = parent.offsetWidth;
+  // canvas.height = window.innerWidth;
+  // canvas.height = window.innerHeight;
 
   document.getElementById("btn").addEventListener("click", function() {
 
