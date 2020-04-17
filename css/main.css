@@ -10,8 +10,8 @@ canvas[resize] {
 }
 
 .container {
-  max-width: 580px;
-  max-height: 580px;
+  width: 580px;
+  height: 580px;
   margin: auto;
   overflow: hidden;
   box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.08);
@@ -52,8 +52,8 @@ canvas[resize] {
 
 @media only screen and (max-width: 600px) {
   .container {
-    height: 80vh;
-    max-height: inherit;
+    height: 100vh;
+    width: inherit;
   }
 
   .controls {
