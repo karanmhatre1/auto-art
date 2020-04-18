@@ -11,16 +11,6 @@ canvas[resize] {
   height: 100%;
 }
 
-.container {
-  width: 580px;
-  height: 580px;
-  margin: auto;
-  overflow: hidden;
-  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.08);
-  border: 20px solid #fff;
-  /* border-radius: 50px; */
-}
-
 .controls {
   position: absolute;
   padding: 0 20px;
@@ -29,6 +19,7 @@ canvas[resize] {
   box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.08);
   margin-left: 20px;
   margin-top: 20px;
+  transition: 0.3s;
 }
 
 .controls ul {
@@ -39,7 +30,7 @@ canvas[resize] {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 30px;
+  margin-right: 10px;
   display: inline-block;
 }
 
@@ -60,6 +51,10 @@ canvas[resize] {
   background-color: #8CB6BD;
   color: #F2EEE9;
 }
+
+.hide {
+  transform: translate(0, -200px) ;
+}
 /* 
 @media only screen and (max-width: 600px) {
   .container {
@@ -76,3 +71,7 @@ canvas[resize] {
     margin-right: 0px;
   }
 } */
+
+audio {
+  display: none;
+}

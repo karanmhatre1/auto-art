@@ -15,22 +15,37 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-    <div class="controls">
+    <div class="controls" id="controls">
       <ul>
         <li>
           <a href="#" id="generateBtn">Generate Art</a>
         </li>
         <li>
-          <a href="/path/to/image.png" download id="btn">Get Image</a>
+          <a href="#" id="animateBtn" data-playing="0">Animate</a>
+        </li>
+        <li>
+          <a href="/path/to/image.png" download id="btn">Download Image</a>
+        </li>
+        <li>
+          <audio controls id="audio" loop="loop">
+            <source src="audio/piano_edited.m4a" type="audio/x-m4a">
+            Your browser does not support the audio tag.
+          </audio>
         </li>
       </ul>
     </div>
+
+    <div id="showControlsContainer" class="controls hide">
+      <ul>
+        <li><a href="#" id="showControls">👆</a></li>
+      </ul>
+    </div>
+    
     <canvas id="myCanvas" resize></canvas>
 
   </body>
 
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js"></script>
+  <script src="js/paper.js"></script>
   <script type="text/javascript" src="js/builder.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
