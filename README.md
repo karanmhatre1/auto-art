@@ -1,4 +1,4 @@
-# Computer Generated Art using Paper JS
+# Generative Art using Paper JS
 
 ![alt text](https://miro.medium.com/max/4800/1*ruXGvMSpUwmgrgyHu3DbbQ.png "generated artworks")
 
